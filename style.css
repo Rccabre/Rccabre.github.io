@@ -104,20 +104,26 @@ figure {
 	}
 
 #second {
-	padding: 250px;
+	background-size: 100% 100%;
 	background-image: url('ilnaso.jpg');
 	background-repeat: no-repeat;
 }
 #third {
-	background: yellow;
+	background-size: 400px 400px;
+	background-repeat: no-repeat;
+	background-image: url('invi.jpg');
 }
 
 #fourth {
-	background: orange;
+	background-size: 400px 400px;
+	background-image: url('invitation.jpg');
+	background-repeat: no-repeat;
 }
 
 #fifth {
-	background: purple;
+	background-repeat: no-repeat;
+	background-size: 400px 400px;
+	background-image: url('bottle.png');
 }
 
 .clear {
