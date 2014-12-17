@@ -1,0 +1,145 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family:'Ubuntu', sans-serif;
+}
+section {
+	width: 100vw;
+	height: 100vh;
+}
+
+#home h1{
+	font-size: 50px;
+	color: #006a5f;
+	position: absolute;
+	top: 40%;
+	text-align: center;
+	width: 100%;
+	  animation: 3s ease 0s normal none 1 cssAnimation;
+	}
+		@keyframes cssAnimation {
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.009) skew(0deg) translate(0px);
+		}
+		@-webkit-keyframes cssAnimation{
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.009) skew(0deg) translate(0px);
+	  	}
+	}
+}
+/*img{
+	max-width: 150%;
+	height: auto;
+ 	padding-top: 200px;
+ 	padding-left: 500px;
+ 	background-attachment: fixed;
+}*/
+
+#logo{
+	width: 130px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 160px;
+
+		  animation: 3s ease 0s normal none 1 cssAnimation;
+	}
+		@keyframes cssAnimation {
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.009) skew(0deg) translate(0px);
+		}
+		@-webkit-keyframes cssAnimation{
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.009) skew(0deg) translate(0px);
+	  	}
+	}
+}
+nav a {
+    color: #231f20;
+    display: inline-block;
+    font-size: 1.35em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 15px 25px;
+    outline: medium none;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.continue {
+	color: #231f20;
+	font-size: 20px;
+	text-align: center;
+	margin-top: -250px;
+}
+.continue-efect  {
+	position: relative;
+	z-index: 1;
+}
+
+.continue a {
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.continue a span {
+	display: block;
+	padding: 10px 20px;
+	background: #0f7c67;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.continue-efect a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 10px 20px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	color: #0f7c67;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-25%);
+}
+
+.continue-efect a:hover span,
+.continue-efect a:focus span {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.continue-efect a:hover::before,
+.continue-efect a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
