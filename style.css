@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #page {
 width: 900px;
 background: #fff;
@@ -8,3 +9,181 @@ border-left: 1px solid #eBeBe8;
 podding-bottom: 100px;
 }
 
+=======
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family:'Ubuntu', sans-serif;
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+}
+nav {
+    background: none repeat scroll 0 0 #0f7c67;
+    border-bottom: 2px solid #e3e3e3;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+nav a {
+    color: #231f20;
+    display: inline-block;
+    padding: 1.2em 0.8em;
+    text-decoration: none;
+}
+#intro {
+	background: #fff;
+	position: relative;
+
+}
+#intro h1{
+	padding: 175px;
+	color: #231f20;
+    font-size: 2rem;
+	text-align: center;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	  animation: 5s ease 0s normal none 1 cssAnimation;
+	}
+		@keyframes cssAnimation {
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.00) skew(0deg) translate(0px);
+		}
+		@-webkit-keyframes cssAnimation{
+		0% {
+	    transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+		}
+		100% {
+	    transform: rotate(0deg) scale(1.00) skew(0deg) translate(0px);
+	  	}
+	}
+}
+#pic {
+	background-image: url('winter.JPG');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#pic img{
+ 	padding-top: 200px;
+ 	padding-left: 500px;
+ 	background-attachment: fixed;
+}
+#portfolio {
+	background-color: rgba(61, 61, 61);
+	margin: 0px;
+}
+#slideshow {
+  	margin-left: auto ;
+  	margin-right: auto ;
+	position: relative;
+	width: 800px;
+	height: 750px;
+	overflow: hidden;
+}
+#slider {
+	padding-top: 150px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: left cubic-bezier(.01,.98,.87,.97) 0.75s;
+	width: 4000px;
+	
+}
+
+figure {
+	float: left;
+	width: 800px;
+	height: 450px;
+	margin: 0;
+}
+
+#first{
+	padding-top: 100px;
+	text-align: center;
+	background: #fff;
+	}
+
+#second {
+	background-size: 100% 100%;
+	background-image: url('ilnaso.jpg');
+	background-repeat: no-repeat;
+}
+#third {
+	background-size: 400px 400px;
+	background-repeat: no-repeat;
+	background-image: url('invi.jpg');
+}
+
+#fourth {
+	background-size: 400px 400px;
+	background-image: url('invitation.jpg');
+	background-repeat: no-repeat;
+}
+
+#fifth {
+	background-repeat: no-repeat;
+	background-size: 400px 400px;
+	background-image: url('bottle.png');
+}
+
+.clear {
+	clear: both;
+}
+
+#d {
+	position: relative;
+	background-image: url('d.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	perspective: 1px;
+	transform-style: preserved-3d;
+}
+#d ul{
+	position: absolute;
+	top: 30%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 30px; 
+}
+#d p {
+	color: #0f7c67;
+	text-align: center;
+ 	text-decoration: underline;
+    -moz-text-decoration-color:  #0f7c67; /* Code for Firefox */
+    text-decoration-color:  #0f7c67;
+}
+#d ul:first-child {
+	left: 30%;
+	transform: translateZ(-1px) scale(2)
+
+}
+#d ul:last-child {
+right: 30%;
+transform: translateZ(0);
+}
+
+#contact {
+	content: "";
+	padding-top: 100px;
+	position: relative;
+	color: #fff;
+	background: #222;
+	text-align: center;
+}
+@media (min-width: 935px){
+	
+}
+>>>>>>> origin/master
